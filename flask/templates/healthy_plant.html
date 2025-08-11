@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>CROP DISEASE PREDICTIOR</title>
+
+
+    <style>
+        body {
+            background-color: rgb(203, 237, 213);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            height: 70px;
+          }
+        
+        nav img {
+            height: 65px; /* added to set the height of the logo */
+            margin-right: 80px; /* added to create some space between the logo and links */
+            border-radius: 50%; /* added to create a round shape for the logo */
+            margin-left: 50px;
+          }
+    
+        nav a {
+            color: white;
+            display: inline-block; /* added to make the links appear in a line */
+            padding: 14px 16px;
+            text-align: center;
+            height: 70px;
+            font-size: 25px;
+          }
+    
+        nav a:hover {
+            background-color: #cbedd5;
+            color: black;
+          }
+          
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img
+        src="../static/images/logo.png"
+        alt="Logo"
+      />
+        <a
+          class="active"
+          href="{{'index'}}"
+          >Home</a
+        >
+        <a href="{{'about'}}">About</a>
+    </nav>
+
+    <div>
+        <img src="../static/images/CROP DISEASE PREDICTION.png" class="w3-border w3-padding" alt="CROP DISEASE PREDICTION"
+            style="width:1535px;height:200px;">
+    </div>
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+
+                    <h5>
+
+                        There is no disease on the cotton Plant.</br></br>
+                        कपास के पेड़ पर कोई बीमारी नहीं है।
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
