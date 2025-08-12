@@ -41,7 +41,7 @@ Crop Disease Predictor/
 
 Full demo video (hosted on Google Drive):
 
-👉 https://drive.google.com/drive/folders/1D4BoJvP8H84ZlTAvi6V1eoOEpiApKga8?usp=share_link
+👉 [Watch the demo on Google Drive](https://drive.google.com/drive/folders/1D4BoJvP8H84ZlTAvi6V1eoOEpiApKga8?usp=share_link)
 
 ⸻
 
@@ -49,7 +49,7 @@ Full demo video (hosted on Google Drive):
 
 Dataset and sample images are also on Drive:
 
-👉 https://drive.google.com/drive/folders/1mMmooK2LJ8RF5IGTX7F6JF0rJemMnBYu?usp=drive_link
+👉 [Download Dataset from Google Drive](https://drive.google.com/drive/folders/1mMmooK2LJ8RF5IGTX7F6JF0rJemMnBYu?usp=drive_link)
 
 ⸻
 
