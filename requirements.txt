@@ -1,4 +1,9 @@
-Flask>=2.2
-numpy>=1.23
-tensorflow>=2.10
-Pillow>=9.5
+Flask
+tensorflow
+keras
+numpy
+pillow
+opencv-python
+matplotlib
+pandas
+scikit-learn

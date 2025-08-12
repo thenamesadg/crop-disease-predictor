@@ -4,82 +4,81 @@ Deep‑learning + Flask app that predicts cotton leaf health from an uploaded im
 
 ---
 
-## 📁 Project Structure (as-is)
+## 📁 Project Structure
+
+```text
 Crop Disease Predictor/
-├── docs/
-│   ├── Abstract.pdf
-│   ├── Documentation - Crop Disease Predictor.pdf
-│   └── Literature Review.pdf
-├── flask/
-│   ├── app.py
-│   ├── model/
-│   │   ├── cotton_plant_disease_pred_best_model.h5
-│   │   └── v4_cotton_plat_disease_prediction.ipynb
-│   ├── static/
-│   │   └── (uploads, css/images if any)
-│   └── templates/
-│       ├── index.html
-│       ├── about.html
-│       ├── disease_plant.html
-│       ├── healthy_plant.html
-│       └── healthy_plant_leaf.html
-├── model/
-│   ├── cotton_plant_disease_pred_best_model.h5   # (duplicate ok — kept as-is)
-│   └── v4_cotton_plat_disease_prediction.ipynb
-├── presentation/
-│   └── presentation.pptx
-└── video/
-└── Crop_Disease_Demo.mp4
+├─ docs/
+│  ├─ Abstract.pdf
+│  ├─ Documentation - Crop Disease Predictor.pdf
+│  └─ Literature Review.pdf
+├─ flask/
+│  ├─ app.py
+│  ├─ model/
+│  │  ├─ cotton_plant_disease_pred_best_model.h5
+│  │  └─ v4_cotton_plat_disease_prediction.ipynb
+│  ├─ static/
+│  │  └─ user_uploaded/        (runtime uploads)
+│  └─ templates/
+│     ├─ index.html
+│     ├─ about.html
+│     ├─ disease_plant.html
+│     ├─ healthy_plant.html
+│     └─ healthy_plant_leaf.html
+├─ model/
+│  ├─ cotton_plant_disease_pred_best_model.h5   (duplicate kept as-is)
+│  └─ v4_cotton_plat_disease_prediction.ipynb
+├─ presentation/
+│  └─ presentation.pptx
+└─ video/
+   └─ (video hosted externally – see link below)
+
+   Dataset/test images are hosted externally due to size limits.
 
 ---
 
-> Note: Dataset/test images are hosted externally due to size limits.
+🎥 Demo
 
----
+Full demo video (hosted on Google Drive):
 
-## 🎥 Demo
-The demo video is included:
-- `video/Crop_Disease_Demo.mp4`
+👉 https://drive.google.com/drive/folders/1D4BoJvP8H84ZlTAvi6V1eoOEpiApKga8?usp=share_link
 
----
+⸻
 
-## 🖼️ Dataset & Test Images
-Full dataset (train/test images) is on Google Drive:
+🖼️ Dataset & Test Images
+
+Dataset and sample images are also on Drive:
 
 👉 https://drive.google.com/drive/folders/1mMmooK2LJ8RF5IGTX7F6JF0rJemMnBYu?usp=drive_link
 
----
+⸻
 
-## 🧠 Model
-The trained CNN model (`cotton_plant_disease_pred_best_model.h5`) is loaded by the Flask app from `flask/model/`:
-```python
-# in flask/app.py
+🧠 Model
+
+The Flask app loads the model from flask/model/:
 from tensorflow.keras.models import load_model
 model = load_model("model/cotton_plant_disease_pred_best_model.h5")
 
+---
 
 🚀 Run Locally
 
 Option A — run from project root (recommended)
-
 cd "Crop Disease Predictor"
 python3 -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
 
-# run the Flask app that lives in the flask/ folder
 python flask/app.py
 # then open http://127.0.0.1:5000
 
 Option B — run from inside the flask folder
-
-If you run from inside flask/, make sure the model path in app.py
-is "model/cotton_plant_disease_pred_best_model.h5" (it is).
-
 cd "Crop Disease Predictor"/flask
 pip install -r ../requirements.txt
 python app.py
+
+---
 
 🔧 Tech
 	•	TensorFlow / Keras, NumPy, Pillow
@@ -89,9 +88,8 @@ python app.py
 ⸻
 
 📚 Docs & Slides
-
-See docs/ for abstract, literature review, and full documentation.
-Slides: presentation/presentation.pptx
+	•	See docs/ for abstract, literature review, and full documentation
+	•	Slides: presentation/presentation.pptx
 
 ⸻
 

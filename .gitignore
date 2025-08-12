@@ -1,25 +1,36 @@
-# Mac / OS X
-.DS_Store
-
-# Python cache
+# Python cache and virtual environments
 __pycache__/
 *.pyc
 *.pyo
-
-# Virtual environments
+*.pyd
 .venv/
 env/
 venv/
 
+# macOS files
+.DS_Store
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Uploaded files during runtime
+flask/static/user_uploaded/
+
+# Large media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Dataset and large archives
+*.zip
+*.tar
+*.gz
+*.csv
+*.jpg
+*.jpeg
+*.png
+
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-
-# Dataset / large files
-dataset/
-data/
-
-# VS Code
-.vscode/
-
-# Other temp files
-*.log
