@@ -24,36 +24,39 @@ Users can upload a cotton leaf image and instantly receive:
 
 ---
 
-## 📁 Project Structure
-
+## 📂 Project Structure
 ```text
 Crop Disease Predictor/
-├─ docs/
-│  ├─ Abstract.pdf
-│  ├─ Documentation - Crop Disease Predictor.pdf
-│  └─ Literature Review.pdf
-├─ flask/
-│  ├─ app.py
-│  ├─ model/
-│  │  ├─ cotton_plant_disease_pred_best_model.h5
-│  │  └─ v4_cotton_plat_disease_prediction.ipynb
-│  ├─ static/
-│  │  └─ user_uploaded/        (runtime uploads)
-│  └─ templates/
-│     ├─ index.html
-│     ├─ about.html
-│     ├─ disease_plant.html
-│     ├─ healthy_plant.html
-│     └─ healthy_plant_leaf.html
-├─ model/
-│  ├─ cotton_plant_disease_pred_best_model.h5   (duplicate kept as-is)
-│  └─ v4_cotton_plat_disease_prediction.ipynb
-├─ presentation/
-│  └─ presentation.pptx
-└─ video/
-   └─ (video hosted externally – see link below)
+├── docs/
+│   ├── Abstract.pdf
+│   ├── Documentation - Crop Disease Predictor.pdf
+│   └── Literature Review.pdf
+│
+├── flask/
+│   ├── app.py
+│   ├── model/
+│   │   ├── cotton_plant_disease_pred_best_model.h5
+│   │   └── v4_cotton_plat_disease_prediction.ipynb
+│   ├── static/
+│   │   └── user_uploaded/  (runtime uploads)
+│   └── templates/
+│       ├── index.html
+│       ├── about.html
+│       ├── disease_plant.html
+│       ├── healthy_plant.html
+│       └── healthy_plant_leaf.html
+│
+├── model/
+│   ├── cotton_plant_disease_pred_best_model.h5
+│   └── v4_cotton_plat_disease_prediction.ipynb
+│
+├── presentation/
+│   └── presentation.pptx
+│
+└── README.md
+```
 
-   > **Note:** Large assets like the dataset and demo video are hosted on Google Drive.
+> **Note:** Large assets like the dataset and demo video are hosted on Google Drive.
 
 ---
 
@@ -67,48 +70,56 @@ Crop Disease Predictor/
 
 📂 **[Download dataset and test images from Google Drive](https://drive.google.com/drive/folders/1mMmooK2LJ8RF5IGTX7F6JF0rJemMnBYu?usp=drive_link)**
 
-⸻
+---
 
-🧠 Model
-
-The Flask app loads the model from flask/model/:
-from tensorflow.keras.models import load_model
-model = load_model("model/cotton_plant_disease_pred_best_model.h5")
+## 🧠 Tech Stack
+- **Python**: TensorFlow, Keras, NumPy, OpenCV, Pillow  
+- **Flask** for web deployment  
+- **HTML, CSS** (via templates)  
 
 ---
 
-🚀 Run Locally
+## ⚙️ How to Run Locally
 
-Option A — run from project root (recommended)
+1. **Clone the repository**
+```bash
+git clone https://github.com/thenamesadg/crop-disease-predictor.git
 cd "Crop Disease Predictor"
+```
+
+2. **Create and activate a virtual environment**
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
+3. **Install dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-python flask/app.py
-# then open http://127.0.0.1:5000
-
-Option B — run from inside the flask folder
-cd "Crop Disease Predictor"/flask
-pip install -r ../requirements.txt
+4. **Run the Flask app**
+```bash
+cd flask
 python app.py
+```
+
+5. **Open your browser** and visit:
+```
+http://127.0.0.1:5000
+```
 
 ---
 
-🔧 Tech
-	•	TensorFlow / Keras, NumPy, Pillow
-	•	Flask (Python)
-	•	HTML templates + basic static assets
+## 📚 Documentation
+- See `/docs` for Abstract, Literature Review, and complete project documentation.  
+- `/presentation` contains the project presentation slides.
 
-⸻
+---
 
-📚 Docs & Slides
-	•	See docs/ for abstract, literature review, and full documentation
-	•	Slides: presentation/presentation.pptx
+## 🙌 Credits
+Developed as part of a university research project.  
+**Team:** TEAM_4078  
 
-⸻
-
-👤 Contact
-
-Aditya (Adi) Gujjar — gujjaraditya5555@gmail.com
+**Author:** Aditya (Adi) Gujjar  
+📧 [gujjaraditya5555@gmail.com](mailto:gujjaraditya5555@gmail.com)
