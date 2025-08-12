@@ -1,6 +1,26 @@
 # 🌾 Crop Disease Predictor
 
-Deep‑learning + Flask app that predicts cotton leaf health from an uploaded image using a trained CNN model.
+A deep learning-powered web application that predicts cotton plant diseases from leaf images using a trained Convolutional Neural Network (CNN), deployed via Flask.
+
+---
+
+## 📌 Project Overview
+
+This project helps farmers and agricultural experts identify common cotton plant diseases early using image classification techniques.  
+The model is a CNN trained on a labeled dataset of healthy and diseased cotton leaves.  
+
+Users can upload a cotton leaf image and instantly receive:  
+- Disease classification (or healthy result)  
+- Recommended treatment suggestions  
+
+---
+
+## 🚀 Features
+- 🧠 **Trained CNN model** for cotton leaf disease detection  
+- 🌐 **Flask-based web app** for real-time predictions  
+- 📤 **Image upload support**  
+- 💡 **Remedy suggestions** for detected diseases  
+- 🎨 Simple and accessible **UI**  
 
 ---
 
@@ -33,23 +53,19 @@ Crop Disease Predictor/
 └─ video/
    └─ (video hosted externally – see link below)
 
-   Dataset/test images are hosted externally due to size limits.
+   > **Note:** Large assets like the dataset and demo video are hosted on Google Drive.
 
 ---
 
-🎥 Demo
+## 🎥 Demo Video
 
-Full demo video (hosted on Google Drive):
+📹 **[Watch the full demo on Google Drive](https://drive.google.com/drive/folders/1D4BoJvP8H84ZlTAvi6V1eoOEpiApKga8?usp=share_link)**
 
-👉 [Watch the demo on Google Drive](https://drive.google.com/drive/folders/1D4BoJvP8H84ZlTAvi6V1eoOEpiApKga8?usp=share_link)
+---
 
-⸻
+## 🖼️ Dataset & Test Images
 
-🖼️ Dataset & Test Images
-
-Dataset and sample images are also on Drive:
-
-👉 [Download Dataset from Google Drive](https://drive.google.com/drive/folders/1mMmooK2LJ8RF5IGTX7F6JF0rJemMnBYu?usp=drive_link)
+📂 **[Download dataset and test images from Google Drive](https://drive.google.com/drive/folders/1mMmooK2LJ8RF5IGTX7F6JF0rJemMnBYu?usp=drive_link)**
 
 ⸻
 
